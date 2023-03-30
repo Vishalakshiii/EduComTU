@@ -41,13 +41,10 @@ $first_name=$_POST['first_name'];
 $last_name=$_POST['last_name'];
 $mobile_number=$_POST['mobile_number'];
 $email=$_POST['email'];
-$adhaar_number=$_POST['adhaar_number'];
-$gender=$_POST['gender'];
 $dob=$_POST['dob'];
 $address=$_POST['address'];
-$quota=$_POST['quota'];
  
-$sql="INSERT INTO `user_data`.`user_details` (username, password, first_name, last_name, mobile_number, email, adhaar_number, gender, dob, address, quota) VALUES ('$username','$password','$first_name','$last_name','$mobile_number','$email','$adhaar_number','$gender','$dob','$address','$quota');"; 
+$sql="INSERT INTO `user_data`.`user_details` (username, password, first_name, last_name, mobile_number, email,dob, address) VALUES ('$username','$password','$first_name','$last_name','$mobile_number','$email','$dob','$address');"; 
 
 
 if (mysqli_query($conn, $sql)) {
